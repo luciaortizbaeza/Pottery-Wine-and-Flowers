@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+body{font-family: "Cormorant", serif;
+    background-color: #EAE4DD;
+    color: #561C24;
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    
+}
+
+header{height: 40px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+footer{background-color: #C7B7A3;
+    margin-top: 25px;
+    padding: 20px;
+
+}
+
+h1, h2{font-family: "Source Serif 4", serif;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+h1{text-transform: uppercase;
+    font-size: 2em;
+
+}
+
+
+main{box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    width: 98%;
+
+}
+
+p{font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+.gallery{display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.gallery img, .pottery{width: 30%;
+    display: block;
+    border:2px solid #561C24;
+    transition-property: transform, border-radius, border-color;
+    transition-duration: 0.6s;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.gallery img:hover, img:hover{transform: scale(1.1);
+    border-radius: 10px;
+    border-color: #C7B7A3;
+
+}
+
+@media(max-width: 768px){
+    .gallery img{width: 30%;}
+    h2, h1{line-height: 40px;}
+    p{line-height: 30px;}
+
+}
+
+.logo{
+    display: block;
+    width: 3%;
+   margin: 0 auto;
+}       
